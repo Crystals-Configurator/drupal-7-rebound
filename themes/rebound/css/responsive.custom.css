@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* =============================================================================
+ *   @FontFace
+ * ========================================================================== */
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url("../fonts/open-sans/OpenSans-Light-webfont.eot");
+  src: url("../fonts/open-sans/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-Light-webfont.woff") format("woff"), url("../fonts/open-sans/OpenSans-Light-webfont.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-Light-webfont.svg#OpenSansLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansLightItalic';
+  src: url("../fonts/open-sans/OpenSans-LightItalic-webfont.eot");
+  src: url("../fonts/open-sans/OpenSans-LightItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-LightItalic-webfont.woff") format("woff"), url("../fonts/open-sans/OpenSans-LightItalic-webfont.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url("../fonts/open-sans/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/open-sans/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/open-sans/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-Regular-webfont.svg#OpenSansRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansItalic';
+  src: url("../fonts/open-sans/OpenSans-Italic-webfont.eot");
+  src: url("../fonts/open-sans/OpenSans-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-Italic-webfont.woff") format("woff"), url("../fonts/open-sans/OpenSans-Italic-webfont.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-Italic-webfont.svg#OpenSansItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansSemibold';
+  src: url("../fonts/open-sans/OpenSans-Semibold-webfont.eot");
+  src: url("../fonts/open-sans/OpenSans-Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-Semibold-webfont.woff") format("woff"), url("../fonts/open-sans/OpenSans-Semibold-webfont.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-Semibold-webfont.svg#OpenSansSemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansSemiboldItalic';
+  src: url("../fonts/open-sans/OpenSans-SemiboldItalic-webfont.eot");
+  src: url("../fonts/open-sans/OpenSans-SemiboldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-SemiboldItalic-webfont.woff") format("woff"), url("../fonts/open-sans/OpenSans-SemiboldItalic-webfont.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url("../fonts/open-sans/OpenSans-Bold-webfont.eot");
+  src: url("../fonts/open-sans/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-Bold-webfont.woff") format("woff"), url("../fonts/open-sans/OpenSans-Bold-webfont.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-Bold-webfont.svg#OpenSansBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansBoldItalic';
+  src: url("../fonts/open-sans/OpenSans-BoldItalic-webfont.eot");
+  src: url("../fonts/open-sans/OpenSans-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-BoldItalic-webfont.woff") format("woff"), url("../fonts/open-sans/OpenSans-BoldItalic-webfont.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansExtrabold';
+  src: url("../fonts/open-sans/OpenSans-ExtraBold-webfont.eot");
+  src: url("../fonts/open-sans/OpenSans-ExtraBold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-ExtraBold-webfont.woff") format("woff"), url("../fonts/open-sans/OpenSans-ExtraBold-webfont.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansExtraboldItalic';
+  src: url("../fonts/open-sans/OpenSans-ExtraBoldItalic-webfont.eot");
+  src: url("../fonts/open-sans/OpenSans-ExtraBoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/OpenSans-ExtraBoldItalic-webfont.woff") format("woff"), url("../fonts/open-sans/OpenSans-ExtraBoldItalic-webfont.ttf") format("truetype"), url("../fonts/open-sans/OpenSans-ExtraBoldItalic-webfont.svg#ExtraboldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello/font/fontello.eot");
+  src: url("../fonts/fontello/font/fontello.eot?#iefix") format("embedded-opentype"), url("../fonts/fontello/font/fontello.woff") format("woff"), url("../fonts/fontello/font/fontello.ttf") format("truetype"), url("../fonts/fontello/font/fontello.svg#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+ * responsive.custom.css is for custom media queries that are not set via the
+ * theme settings, such as cascading media queries.
+ *
+ * By default all the other responsive stylesheets used in Adaptivetheme use a
+ * "stacking method", however cascading media queries use a waterfall method so
+ * you can leverage the cascade and inheritance for all browsers that support
+ * media queries, regardless of screen size.
+ *
+ * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
+ *
+ * NOTE: this file loads by default, to disable got to your theme settings and
+ * look under the "CSS" settings tab.
+ */
+/*
+ * Really small screens and up
+ */
+/* @media only screen and (min-width: 220px) {} */
+/*
+ * Smartphone sizes and up
+ */
+/* @media only screen and (min-width: 320px) {} */
+/*
+ * Smartphone sizes and down
+ */
+@media only screen and (max-width: 480px) {
+  /* 
+   * Float Region blocks example:
+   * In smaller screen sizes we can remove the float and widths so all blocks
+   * stack instead of displaying horizonally. The selector used here is an
+   * "attribute selector" which will match on any float block class. Use your
+   * inspector or Firebug to get the classes from the page output if you need
+   * more granular control over block alignment and stacking.
+   * 
+   * "Float Region blocks" is an extension for floating blocks in regions, see
+   * your themes appearance settings, under the Extensions tab.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macpro\/Dropbox\/Drupal\/rebound-wow\.eu\/themes\/rebound\/sass\/responsive\.custom\.scss}line{font-family:\0000349}}
+  .region[class*="float-blocks"] .block {
+    float: none;
+    width: 100%;
+  }
+}
+/*
+ * Tablet sizes and up
+ */
+@media only screen and (min-width: 480px) {
+  /* =============================================================================
+   *   Show blocks
+   * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macpro\/Dropbox\/Drupal\/rebound-wow\.eu\/themes\/rebound\/sass\/responsive\.custom\.scss}line{font-family:\0000365}}
+  #block-views-4b70d899205671e77175ac5ffe434c11 {
+    display: block;
+  }
+
+  /* =============================================================================
+   *   Article Styles
+   * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macpro\/Dropbox\/Drupal\/rebound-wow\.eu\/themes\/rebound\/sass\/responsive\.custom\.scss}line{font-family:\0000374}}
+  .node .author-datetime {
+    float: left;
+    margin-right: 1em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macpro\/Dropbox\/Drupal\/rebound-wow\.eu\/themes\/rebound\/sass\/responsive\.custom\.scss}line{font-family:\0000379}}
+  .meta-tag {
+    display: inline;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macpro\/Dropbox\/Drupal\/rebound-wow\.eu\/themes\/rebound\/sass\/responsive\.custom\.scss}line{font-family:\0000383}}
+  .on {
+    margin-left: 1em;
+  }
+
+  /* =============================================================================
+   *   Branding
+   * ========================================================================== */
+  /*
+   * Wraps all the branding elements, logo, name and slogan
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macpro\/Dropbox\/Drupal\/rebound-wow\.eu\/themes\/rebound\/sass\/responsive\.custom\.scss}line{font-family:\0000395}}
+  #branding {
+    border-bottom: 6px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: -6px;
+  }
+
+  /*
+   * Site slogan (h2)
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macpro\/Dropbox\/Drupal\/rebound-wow\.eu\/themes\/rebound\/sass\/responsive\.custom\.scss}line{font-family:\00003103}}
+  #site-slogan {
+    position: absolute;
+  }
+
+  /*
+   * Logo
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macpro\/Dropbox\/Drupal\/rebound-wow\.eu\/themes\/rebound\/sass\/responsive\.custom\.scss}line{font-family:\00003110}}
+  #logo {
+    margin-bottom: -62px;
+  }
+
+  /*
+   * Wrapper for the site name and slogan (hgroup)
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macpro\/Dropbox\/Drupal\/rebound-wow\.eu\/themes\/rebound\/sass\/responsive\.custom\.scss}line{font-family:\00003117}}
+  #site-slogan {
+    left: 50%;
+    margin-left: 205px;
+    top: 61px;
+  }
+
+  /*
+   * "User login form" block
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/macpro\/Dropbox\/Drupal\/rebound-wow\.eu\/themes\/rebound\/sass\/responsive\.custom\.scss}line{font-family:\00003127}}
+  #block-user-login,
+  #block-system-user-menu {
+    top: 100px;
+  }
+}
+/*
+ * Desktops/laptops and up
+ */
+/* @media only screen and (min-width: 1025px) {} */

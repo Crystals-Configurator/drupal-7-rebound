@@ -1,0 +1,423 @@
+@charset "UTF-8";
+//
+// Custom sass variables and mixins
+//
+// Variables
+// -----------------------------------------------------------------------------
+// The variables set here serve only as example of how you can use SASS variables
+// to centralize and control frequently used styles more easily. Here you will
+// find variables for colors, fonts and the global gutter width.
+//
+// Mixins
+// -----------------------------------------------------------------------------
+// To use a mixin in this file, add this line to the top of your .scss file:
+//   @import "base"; (_base.scss imports _custom.scss).
+//
+// Then to use a mixin for a particular rule, add this inside the ruleset's
+// curly brackets:
+//   @include mix-in-name;
+//
+
+//
+// Color Variables
+// Colors used in the sample global.styles. You can use these to recolor many
+// elements such as forms, tables, tabs etc.
+//
+
+$page:         		#fcfcfc;    // to match the page background, default is white
+$border:       		#ccc;    // all borders set in global.styles - tables, fieldset, primary links
+$highlight:    		#c00;    // required mark, form error highlight, "new" label on comments
+$ultralight:   		#f5f5f5; // table row even, primary link inactive tabs
+$light:        		#e5e5e5;    // table row odd active, primary link inactive hover
+$medium_light:		#ddd; // table row even active
+$medium:			 		#ccc;
+$medium_dark:  		#aaa; // table thead
+$semi:						#666;
+$dark_light:			#444;
+$dark:						#333;
+$dark_dark:				#111;
+$primary_color:		#832a90; // octopus purple
+$primary_light:		#bf93c6;
+$primary_dark:		#5b1d65;
+$secondary_color:	#14353f; // deep aqua
+$secondary_light:	#2e5e6d;
+$secondary_dark:	#081a20;
+$shadow:					rgba(0,0,0, 0.2);
+$debug:        		rgba(255, 192, 203, 0.5); // Full width wrapper test
+
+
+
+$thead:          $medium_dark;
+$tr_odd:         $page;
+$tr_even:        $ultralight;
+$tr_odd_active:  $light;
+$tr_even_active: $medium_light;
+
+$primary_task:        $ultralight;
+$primary_task_hover:  $light;
+$primary_task_active: $page;
+
+
+//
+// Font Variables
+// These font stacks are an exact copy of the stacks found in AT Cores
+// theme settings for web safe fonts.
+//
+
+/* =============================================================================
+ *   @FontFace
+ * ========================================================================== */
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/open-sans/OpenSans-Light-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-Light-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansLightItalic';
+    src: url('../fonts/open-sans/OpenSans-LightItalic-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-LightItalic-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-LightItalic-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/open-sans/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('../fonts/open-sans/OpenSans-Italic-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-Italic-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/open-sans/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansSemiboldItalic';
+    src: url('../fonts/open-sans/OpenSans-SemiboldItalic-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-SemiboldItalic-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/open-sans/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansBoldItalic';
+    src: url('../fonts/open-sans/OpenSans-BoldItalic-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-BoldItalic-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansExtrabold';
+    src: url('../fonts/open-sans/OpenSans-ExtraBold-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-ExtraBold-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansExtraboldItalic';
+    src: url('../fonts/open-sans/OpenSans-ExtraBoldItalic-webfont.eot');
+    src: url('../fonts/open-sans/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'),
+         url('../fonts/open-sans/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/OpenSans-ExtraBoldItalic-webfont.svg#ExtraboldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$sans-serif-small:            'OpenSansRegular', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$sans-serif-large:            Verdana, Geneva, 'DejaVu Sans', Arial, Helvetica, sans-serif;
+$sans-serif-arial-helvetica:  Arial, Helvetica, sans-serif;
+$calibri-candara:             Calibri, Candara, Arial, Helvetica, sans-serif;
+$serif-small:                 Garamond, Perpetua, 'Times New Roman', serif;
+$serif-large:                 Georgia, Baskerville, Palatino, 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif;
+$modern-myriad:               'Segoe UI', 'Myriad Pro', Myriad, Arial, Helvetica, sans-serif;
+$lucida:                      'Lucida Sans Unicode', 'Lucida Sans', 'Lucida Grande', Verdana, Geneva, sans-serif;
+$impact:                      Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+$mono:                        Consolas, Monaco, 'Courier New', Courier, monospace, sans-serif;
+
+// Fontello custom mixin
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello/font/fontello.eot");
+  src: url("../fonts/fontello/font/fontello.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/fontello/font/fontello.woff") format('woff'), 
+       url("../fonts/fontello/font/fontello.ttf") format('truetype'), 
+       url("../fonts/fontello/font/fontello.svg#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin icon {
+	font-family: 'fontello';
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: 0.3em;
+	text-align: center;
+	opacity: 1;
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+	/* Animation center compensation - magrins should be symmetric */
+	/* remove if not needed */
+	margin-left: 0.3em;
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+@mixin icon-container {
+	display:inline-block;
+	visibility: hidden;
+	line-height: 0;
+	width: 1em;
+	height: 1em;
+}
+
+@mixin icon-pinboard { @include icon; content: '\6e'; }
+@mixin icon-cog { @include icon; content: '\2699'; }
+@mixin icon-mail { @include icon; content: '\2709'; }
+@mixin icon-mail-alt { @include icon; content: '\f0e0'; }
+@mixin icon-edit { @include icon; content: '\270d'; }
+@mixin icon-pencil { @include icon; content: '\270e'; }
+@mixin icon-cancel { @include icon; content: '\2715'; }
+@mixin icon-off { @include icon; content: '\e071'; }
+@mixin icon-eye { @include icon; content: '\e70a'; }
+@mixin icon-tag { @include icon; content: '\e70c'; }
+@mixin icon-comment { @include icon; content: '\e718'; }
+@mixin icon-down-open { @include icon; content: '\e75c'; }
+@mixin icon-up-open { @include icon; content: '\e75f'; }
+@mixin icon-arrows-cw { @include icon; content: '\e760'; }
+@mixin icon-reply { @include icon; content: '\f112'; }
+@mixin icon-bell { @include icon; content: '\1F514'; }
+@mixin icon-link { @include icon; content: '\1F517'; }
+@mixin icon-wrench { @include icon; content: '\1F527'; }
+@mixin icon-clock { @include icon; content: '\1f554'; }
+
+//
+// Gutters
+//
+// Set a variable for the gutters. Adaptivetheme allows you to easly modify the
+// global gutter width for precise control over the design. Panel pages need
+// special gutter wrangling when a Panel is inside #content wrapper, so to ease
+// setting this we use a variable.
+//
+$gutter-width: 10px;
+
+
+//
+// Markup free clearing
+// http://www.stubbornella.org/content/2012/05/02/cross-browser-debugging-css/
+//
+
+@mixin cf {
+  overflow: hidden;   // New formatting context in better browsers
+  *overflow: visible; // Protect IE7 and older from the overflow property
+  *zoom: 1;           // Give IE hasLayout, a new formatting context equivalent
+}
+
+
+//
+// Image replacement
+// Kellum Method: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement
+// Additional helpers from http://html5boilerplate.com/docs/css/
+// This is also included as a SASS mixin, see: sass/custom.rb
+//
+
+@mixin ir {
+  // Kellum Method
+  display: block !important;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  // Additional helpers
+  border: 0;                     // Remove the default border from elements like <button>
+  font: 0/0 a;                   // Crush the text down to take up no space
+  text-shadow: none;             // Remove any text shadows
+  color: transparent;            // Hide any residual text in Safari 4 and any mobile devices that may need it
+  background-color: transparent; // Hide the default background color on elements like <button>
+}
+
+
+//
+// element-invisible improved and more robust
+//
+@mixin element-invisible {
+  border: 0;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    clip: rect(1px 1px 1px 1px); // IE6 and IE7 use the wrong syntax
+  }
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+//
+// Turns off the element-invisible effect
+//
+@mixin element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+@mixin element-focusable {
+  @include element-invisible;
+
+  &:active,
+  &:focus {
+    @include element-invisible-off;
+  }
+}
+
+
+//
+// Shift content offscreen, can be usefull when you reall need to do this
+//
+@mixin offscreen {
+  position: absolute;
+  top: -99999em;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  outline: 0;
+}
+
+
+//
+// Hide content from all users
+//
+@mixin element-hidden {
+  display: none;
+}
+
+
+//
+// The word "Unpublished" displayed underneath unpublished nodes and comments
+//
+@mixin unpublished {
+  color: pink; // target browsers that do not support rgba
+  color: rgba(239, 170, 170, 0.4);
+  font-family: $impact;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+
+  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+    .ie6-7 &>* {
+      position: relative; // Otherwise these elements will appear below the "Unpublished" text.
+    }
+  }
+}
+
+//
+// CSS3 transiton, transform and animation
+//
+
+@mixin transiton($prop:all, $time:.5s, $ease:ease-out, $delay:0s) {
+	-webkit-transition: $prop $time $ease $delay;
+		 -moz-transition: $prop $time $ease $delay;
+			 -o-transition: $prop $time $ease $delay;
+				  transition: $prop $time $ease $delay;
+}
+
+//
+// Border radius
+//
+
+@mixin border-radius($raidus:5px) {
+	-webkit-border-radius: $raidus;
+		 -moz-border-radius: $raidus;
+					border-radius: $raidus;
+}
+
+@mixin linear-gradient-vertical($color1:#eee, $color2:#ccc) {
+	background: $color1; /* Old browsers */
+	background: -moz-linear-gradient(top,  $color1 0%, $color2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,$color2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  $color1 0%,$color2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  $color1 0%,$color2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  $color1 0%,$color2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  $color1 0%,$color2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 ); /* IE6-9 */
+}

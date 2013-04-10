@@ -1,0 +1,263 @@
+{
+  "name": "",
+  "glyphs": [
+    {
+      "search": [
+        "pinboard"
+      ],
+      "code": 110,
+      "uid": "c91522256a4c3972e9a2765b995b7252",
+      "css": "pinboard",
+      "orig_css": "pinboard",
+      "orig_code": 110,
+      "src": "zocial",
+      "from": 110
+    },
+    {
+      "search": [
+        "settings",
+        "cog",
+        "gear",
+        "params"
+      ],
+      "code": 9881,
+      "from": 9881,
+      "uid": "e99461abfef3923546da8d745372c995",
+      "css": "cog",
+      "orig_css": "cog",
+      "orig_code": 9881,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "mail",
+        "email"
+      ],
+      "code": 9993,
+      "from": 9993,
+      "uid": "bf882b30900da12fca090d9796bc3030",
+      "css": "mail",
+      "orig_css": "mail",
+      "orig_code": 9993,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "pencil",
+        "write",
+        "reply",
+        "edit"
+      ],
+      "code": 9997,
+      "from": 9997,
+      "uid": "jqzwo6i8oicjbn049sh2856d8anrqoli",
+      "css": "edit",
+      "orig_css": "edit",
+      "orig_code": 9997,
+      "src": "typicons"
+    },
+    {
+      "search": [
+        "pencil",
+        "write",
+        "reply",
+        "edit"
+      ],
+      "code": 9998,
+      "from": 9998,
+      "uid": "1e77a2yvsq3owssduo2lcgsiven57iv5",
+      "css": "pencil",
+      "orig_css": "pencil",
+      "orig_code": 9998,
+      "src": "typicons"
+    },
+    {
+      "search": [
+        "close",
+        "cancel",
+        "reject"
+      ],
+      "code": 10005,
+      "from": 10005,
+      "uid": "1dq4tek4k8ea7zlj4kc3w83itnutaxg5",
+      "css": "cancel",
+      "orig_css": "cancel",
+      "orig_code": 10005,
+      "src": "typicons"
+    },
+    {
+      "search": [
+        "off"
+      ],
+      "code": 57457,
+      "uid": "c835a3a0692cca9dffde9a8a561da938",
+      "css": "off",
+      "orig_css": "off",
+      "orig_code": 57457,
+      "src": "elusive",
+      "from": 57457
+    },
+    {
+      "search": [
+        "eye",
+        "subscribe"
+      ],
+      "code": 59146,
+      "from": 59146,
+      "uid": "frauy9fser6zk9n5ih3rdpz7zzfjbrvu",
+      "css": "eye",
+      "orig_css": "eye",
+      "orig_code": 59146,
+      "src": "modernpics"
+    },
+    {
+      "search": [
+        "tag",
+        "category",
+        "price",
+        "offer"
+      ],
+      "code": 59148,
+      "from": 59148,
+      "uid": "z2kx6nr3u9112p0e1pfhxdhva9v7kd4k",
+      "css": "tag",
+      "orig_css": "tag",
+      "orig_code": 59148,
+      "src": "typicons"
+    },
+    {
+      "search": [
+        "comment",
+        "reply",
+        "write"
+      ],
+      "code": 59160,
+      "from": 59160,
+      "uid": "b90868gfogj970a1g0dnot6hm5r4uj55",
+      "css": "comment",
+      "orig_css": "comment",
+      "orig_code": 59160,
+      "src": "typicons"
+    },
+    {
+      "search": [
+        "arrow",
+        "down"
+      ],
+      "code": 59228,
+      "from": 59228,
+      "uid": "ccddff8e8670dcd130e3cb55fdfc2fd0",
+      "css": "down-open",
+      "orig_css": "down-open",
+      "orig_code": 59228,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "arrow",
+        "up"
+      ],
+      "code": 59231,
+      "from": 59231,
+      "uid": "fe6697b391355dec12f3d86d6d490397",
+      "css": "up-open",
+      "orig_css": "up-open",
+      "orig_code": 59231,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "reload",
+        "refresh",
+        "update",
+        "sync"
+      ],
+      "code": 59232,
+      "from": 59232,
+      "uid": "mqlxga8x57rhlfv44zsvmz1reex8lbqg",
+      "css": "arrows-cw",
+      "orig_css": "arrows-cw",
+      "orig_code": 59232,
+      "src": "typicons"
+    },
+    {
+      "search": [
+        "mail",
+        "email"
+      ],
+      "code": 61664,
+      "uid": "ccc2329632396dc096bb638d4b46fb98",
+      "css": "mail-alt",
+      "orig_css": "mail-alt",
+      "orig_code": 61664,
+      "src": "fontawesome",
+      "from": 61664
+    },
+    {
+      "search": [
+        "reply"
+      ],
+      "code": 61714,
+      "uid": "c6be5a58ee4e63a5ec399c2b0d15cf2c",
+      "css": "reply",
+      "orig_css": "reply",
+      "orig_code": 61714,
+      "src": "fontawesome",
+      "from": 61714
+    },
+    {
+      "search": [
+        "alert",
+        "bell",
+        "jingle"
+      ],
+      "code": 128276,
+      "uid": "2c5335c6e56b876139d7a58ab2f4b2fe",
+      "css": "bell",
+      "orig_css": "bell",
+      "orig_code": 128276,
+      "src": "entypo",
+      "from": 128276
+    },
+    {
+      "search": [
+        "link",
+        "url",
+        "address"
+      ],
+      "code": 128279,
+      "from": 128279,
+      "uid": "3c4a596e8ee3584c4c9e7002371db19f",
+      "css": "link",
+      "orig_css": "link",
+      "orig_code": 128279,
+      "src": "websymbols"
+    },
+    {
+      "search": [
+        "settings",
+        "wrench"
+      ],
+      "code": 128295,
+      "from": 128295,
+      "uid": "i7r8vgyqewsy2rlx0xhawybpw5uyss3z",
+      "css": "wrench",
+      "orig_css": "wrench",
+      "orig_code": 128295,
+      "src": "typicons"
+    },
+    {
+      "search": [
+        "clock",
+        "time"
+      ],
+      "code": 128340,
+      "from": 128340,
+      "uid": "eh1m4shhgsndy7pmdzx3ynrakadhozgr",
+      "css": "clock",
+      "orig_css": "clock",
+      "orig_code": 128340,
+      "src": "typicons"
+    }
+  ]
+}
