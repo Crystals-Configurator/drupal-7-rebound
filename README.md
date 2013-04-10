@@ -1,4 +1,4 @@
-drupal_d7_portfolio
-===================
+drupal-7-rebound
+================
 
-My Drupal 7 Portfolio theme and modules
+Rebound Guild Drupal 7 theme and modules
